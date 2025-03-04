@@ -1,0 +1,13 @@
+.maid-categories ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .maid-categories li {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,30 @@
+<div class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-blue-600 mb-6 text-center">Maid Profiles</h1>
+  
+    <!-- Grid Container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div
+        *ngFor="let maid of maids"
+        (click)="toggleExpand(maid)"
+        class="maid-card bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transition-all duration-300"
+        [ngClass]="{ 'expanded': maid.expanded }"
+      >
+        <!-- Maid Image -->
+        <img [src]="maid.image" class="w-full h-40 object-cover" />
+  
+        <!-- Maid Basic Info -->
+        <div class="p-4">
+          <h2 class="text-xl font-semibold text-gray-800">{{ maid.name }}</h2>
+          <p class="text-gray-600">Age: {{ maid.age }}</p>
+  
+          <!-- Expanded Details -->
+          <div *ngIf="maid.expanded" class="mt-4">
+            <p class="text-yellow-500">⭐ Rating: {{ maid.rating }}/5</p>
+            <p class="text-gray-600">💰 Pay: ₹{{ maid.minPay }} - ₹{{ maid.maxPay }}</p>
+            <p class="text-gray-600">⏳ Avg. Work Hours: {{ maid.workHours }} hrs/day</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,26 @@
+<p>transaction-history works!</p>
+<div class="transaction-history-container">
+    <h1 class="title">Transaction History</h1>
+  
+    <table class="transaction-table">
+      <thead>
+        <tr>
+          <th>Transaction ID</th>
+          <th>Date</th>
+          <th>Amount (INR)</th>
+          <th>Status</th>
+          <th>Payment Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of transactions">
+          <td>{{ transaction.id }}</td>
+          <td>{{ transaction.date }}</td>
+          <td>₹{{ transaction.amount }}</td>
+          <td class="{{ transaction.status | lowercase }}">{{ transaction.status }}</td>
+          <td>{{ transaction.paymentMethod }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

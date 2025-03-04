@@ -1,0 +1,32 @@
+.bookings table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bookings th, .bookings td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .bookings th {
+    background: #007bff;
+    color: white;
+  }
+  
+  .approve {
+    background: #28a745;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reject {
+    background: #dc3545;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  

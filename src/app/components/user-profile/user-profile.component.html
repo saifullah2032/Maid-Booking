@@ -1,0 +1,16 @@
+<div class="user-profile">
+    <div class="profile-header">
+      <img [src]="user.profilePic" alt="Profile Picture" class="profile-pic" />
+      <h2>{{ user.name }}</h2>
+      <p class="email">{{ user.email }}</p>
+    </div>
+  
+    <div class="profile-info">
+      <p><strong>Phone:</strong> {{ user.phone }}</p>
+      <p><strong>Address:</strong> {{ user.address }}</p>
+      <p><strong>Joined:</strong> {{ user.joinedDate }}</p>
+    </div>
+  
+    <button class="edit-btn">Edit Profile</button>
+  </div>
+  

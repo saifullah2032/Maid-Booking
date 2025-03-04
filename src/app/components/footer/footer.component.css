@@ -1,0 +1,21 @@
+.footer {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    width: 30%;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: white;
+  }
+  

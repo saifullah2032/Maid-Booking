@@ -1,0 +1,30 @@
+.navbar {
+    background: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+    hover:underline; 
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    hover:underline;
+    font-weight: bold;
+  }
+  

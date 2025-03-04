@@ -1,0 +1,27 @@
+<div class="maid-management">
+    <h2>Maid Management</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Maid ID</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let maid of maids">
+          <td>{{ maid.id }}</td>
+          <td>{{ maid.name }}</td>
+          <td>{{ maid.category }}</td>
+          <td>{{ maid.status }}</td>
+          <td>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
